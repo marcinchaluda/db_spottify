@@ -161,39 +161,3 @@ create table Subscription
     constraint fk_band
         references Band
 );
-
-INSERT INTO public.Country (name) VALUES ('Poland');
-INSERT INTO public.Country (name) VALUES ('Russia');
-INSERT INTO public.Country (name) VALUES ('Germany');
-
-INSERT INTO public.City (name) VALUES ('Cracov');
-INSERT INTO public.City (name) VALUES ('Warsaw');
-INSERT INTO public.City (name) VALUES ('Kuzmice');
-
-INSERT INTO public.Address VALUES (1,'Lwowska', 56, 2, 3);
-
-INSERT INTO public.Studio VALUES (1,'Janusze', 1);
-
-INSERT INTO public.Artist (first_name, last_name, gender, instrument) VALUES ('Bob', 'Cat', 'male', 'guitar');
-
-INSERT INTO public.Band (name) VALUES ('Suchy chleb dla konia');
-
-INSERT INTO public.Album (name, studio_id, band_id) VALUES ('Pod ksiezycem', 1, 1);
-
-INSERT INTO public.artist_band (artist_id, band_id) VALUES (1, 1);
-
-INSERT INTO public.genre (type) VALUES ('rock');
-INSERT INTO public.genre (type) VALUES ('disco-polo');
-
-INSERT INTO public.song (name, length, views, album_id, genre_id) VALUES ('oh now', '4:32', 2, 1, 2);
-
-INSERT INTO public.playlist (name) VALUES ('my-playlist');
-
-INSERT INTO public.song_playlist (song_id, playlist_id) VALUES (1, 1);
-
-INSERT INTO public.user_account (first_name, last_name, email, address_id)
-VALUES ('Jan', 'Kowalski', 'test@email.com', 1);
-
-INSERT INTO public.user_playlist (user_id, playlist_id) VALUES (1, 1);
-
-INSERT INTO public.subscription (user_id, band_id) VALUES (1, 1);
