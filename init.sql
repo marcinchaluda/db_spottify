@@ -125,6 +125,18 @@ create table Song_playlist
             references Playlist
 );
 
+create table User_account
+(
+    user_id serial not null
+    constraint user_pkey primary key,
+    first_name varchar(100) not null,
+    last_name varchar(100) not null,
+    email varchar(100) not null,
+    address_id integer not null
+        constraint fk_address
+            references Address
+);
+
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
 INSERT INTO public.Country (name) VALUES ('Germany');
@@ -153,4 +165,7 @@ INSERT INTO public.song (name, length, views, album_id, genre_id) VALUES ('oh no
 INSERT INTO public.playlist (name) VALUES ('my-playlist');
 
 INSERT INTO public.song_playlist (song_id, playlist_id) VALUES (1, 1);
+
+INSERT INTO public.user_account (first_name, last_name, email, address_id)
+VALUES ('Jan', 'Kowalski', 'test@email.com', 1);
 
