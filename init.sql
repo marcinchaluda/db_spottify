@@ -149,6 +149,19 @@ create table User_playlist
         references Playlist
 );
 
+create table Subscription
+(
+    subscription_id serial not null
+    constraint subscription_pkey primary key,
+    date timestamp default now(),
+    user_id integer not null
+    constraint fk_user
+        references User_account,
+    band_id integer not null
+    constraint fk_band
+        references Band
+);
+
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
 INSERT INTO public.Country (name) VALUES ('Germany');
@@ -182,3 +195,5 @@ INSERT INTO public.user_account (first_name, last_name, email, address_id)
 VALUES ('Jan', 'Kowalski', 'test@email.com', 1);
 
 INSERT INTO public.user_playlist (user_id, playlist_id) VALUES (1, 1);
+
+INSERT INTO public.subscription (user_id, band_id) VALUES (1, 1);
