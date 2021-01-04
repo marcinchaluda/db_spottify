@@ -50,6 +50,25 @@ create table Album
             references Studio
 );
 
+create table Artist
+(
+    artist_id serial not null
+    constraint artist_pkey primary key,
+    first_name varchar(100) not null,
+    last_name varchar(100) not null,
+    gender varchar(100) not null,
+    instrument varchar(100) not null
+);
+
+create table Band
+(
+    band_id serial not null
+    constraint band_pkey primary key,
+    name varchar(100) not null,
+    band_establishment timestamp default now()
+);
+
+
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
 INSERT INTO public.Country (name) VALUES ('Germany');
@@ -63,3 +82,8 @@ INSERT INTO public.Address VALUES (1,'Lwowska', 56, 2, 3);
 INSERT INTO public.Studio VALUES (1,'Janusze', 1);
 
 INSERT INTO public.Album (name, studio_id) VALUES ('Pod ksiezycem', 1);
+
+INSERT INTO public.Artist (first_name, last_name, gender, instrument) VALUES ('Bob', 'Cat', 'male', 'guitar');
+
+INSERT INTO public.Band (name) VALUES ('Suchy chleb dla konia');
+
