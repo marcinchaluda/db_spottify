@@ -105,6 +105,13 @@ create table Song
             references Genre
 );
 
+create table Playlist
+(
+    playlist_id serial not null
+    constraint playlist_pkey primary key,
+    name varchar(100) not null,
+    date timestamp default now()
+);
 
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
@@ -130,4 +137,6 @@ INSERT INTO public.genre (type) VALUES ('rock');
 INSERT INTO public.genre (type) VALUES ('disco-polo');
 
 INSERT INTO public.song (name, length, views, album_id, genre_id) VALUES ('oh now', '4:32', 2, 1, 2);
+
+INSERT INTO public.playlist (name) VALUES ('my-playlist');
 
