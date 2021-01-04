@@ -80,6 +80,13 @@ create table Artist_band
             references Band
 );
 
+create table Genre
+(
+    genre_id serial not null
+    constraint genre_pkey primary key,
+    type varchar(100) not null
+);
+
 
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
@@ -100,4 +107,7 @@ INSERT INTO public.Artist (first_name, last_name, gender, instrument) VALUES ('B
 INSERT INTO public.Band (name) VALUES ('Suchy chleb dla konia');
 
 INSERT INTO public.artist_band (artist_id, band_id) VALUES (1, 1);
+
+INSERT INTO public.genre (type) VALUES ('rock');
+INSERT INTO public.genre (type) VALUES ('disco-polo');
 
