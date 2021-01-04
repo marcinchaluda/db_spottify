@@ -39,17 +39,6 @@ create table Studio
             references Address
 );
 
-create table Album
-(
-    album_id serial not null
-    constraint album_pkey primary key,
-    name varchar(100) not null,
-    date timestamp default now(),
-    studio_id integer not null
-        constraint fk_studio
-            references Studio
-);
-
 create table Artist
 (
     artist_id serial not null
@@ -66,6 +55,20 @@ create table Band
     constraint band_pkey primary key,
     name varchar(100) not null,
     band_establishment timestamp default now()
+);
+
+create table Album
+(
+    album_id serial not null
+    constraint album_pkey primary key,
+    name varchar(100) not null,
+    date timestamp default now(),
+    studio_id integer not null
+        constraint fk_studio
+            references Studio,
+    band_id integer not null
+        constraint fk_band
+            references Band
 );
 
 create table Artist_band
@@ -87,6 +90,21 @@ create table Genre
     type varchar(100) not null
 );
 
+create table Song
+(
+    song_id serial not null
+    constraint song_pkey primary key,
+    name varchar(100) not null,
+    length varchar(10) not null,
+    views integer not null,
+    album_id integer not null
+        constraint fk_album
+            references Album,
+    genre_id integer not null
+        constraint fk_genre
+            references Genre
+);
+
 
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
@@ -100,14 +118,16 @@ INSERT INTO public.Address VALUES (1,'Lwowska', 56, 2, 3);
 
 INSERT INTO public.Studio VALUES (1,'Janusze', 1);
 
-INSERT INTO public.Album (name, studio_id) VALUES ('Pod ksiezycem', 1);
-
 INSERT INTO public.Artist (first_name, last_name, gender, instrument) VALUES ('Bob', 'Cat', 'male', 'guitar');
 
 INSERT INTO public.Band (name) VALUES ('Suchy chleb dla konia');
+
+INSERT INTO public.Album (name, studio_id, band_id) VALUES ('Pod ksiezycem', 1, 1);
 
 INSERT INTO public.artist_band (artist_id, band_id) VALUES (1, 1);
 
 INSERT INTO public.genre (type) VALUES ('rock');
 INSERT INTO public.genre (type) VALUES ('disco-polo');
+
+INSERT INTO public.song (name, length, views, album_id, genre_id) VALUES ('oh now', '4:32', 2, 1, 2);
 
