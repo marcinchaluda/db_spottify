@@ -33,7 +33,7 @@ create table Studio
 (
     studio_id serial not null
     constraint studio_pkey primary key,
-    street varchar(100) not null,
+    name varchar(100) not null,
     address_id integer not null
     constraint fk_address
             references Address
@@ -48,3 +48,5 @@ INSERT INTO public.City (name) VALUES ('Warsaw');
 INSERT INTO public.City (name) VALUES ('Kuzmice');
 
 INSERT INTO public.Address VALUES (1,'Lwowska', 56, 2, 3);
+
+INSERT INTO public.Studio VALUES (1,'Janusze', 1);
