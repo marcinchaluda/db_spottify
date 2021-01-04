@@ -10,6 +10,12 @@ def init_database(cursor: RealDictCursor):
 
 
 @database_common.connection_handler
-def add_city(cursor: RealDictCursor, cities):
+def add_cities(cursor: RealDictCursor, cities):
     f = IteratorFile(("{}".format(x) for x in cities))
     cursor.copy_from(f, 'city', columns=(['name']))
+
+
+@database_common.connection_handler
+def add_countries(cursor: RealDictCursor, countries):
+    f = IteratorFile(("{}".format(x) for x in countries))
+    cursor.copy_from(f, 'country', columns=(['name']))
