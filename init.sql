@@ -113,6 +113,18 @@ create table Playlist
     date timestamp default now()
 );
 
+create table Song_playlist
+(
+    song_playlist_id serial not null
+    constraint song_playlist_pkey primary key,
+    song_id integer not null
+        constraint fk_song
+            references Song,
+    playlist_id integer not null
+        constraint fk_playlist
+            references Playlist
+);
+
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
 INSERT INTO public.Country (name) VALUES ('Germany');
@@ -139,4 +151,6 @@ INSERT INTO public.genre (type) VALUES ('disco-polo');
 INSERT INTO public.song (name, length, views, album_id, genre_id) VALUES ('oh now', '4:32', 2, 1, 2);
 
 INSERT INTO public.playlist (name) VALUES ('my-playlist');
+
+INSERT INTO public.song_playlist (song_id, playlist_id) VALUES (1, 1);
 
