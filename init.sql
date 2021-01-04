@@ -68,6 +68,18 @@ create table Band
     band_establishment timestamp default now()
 );
 
+create table Artist_band
+(
+    artist_band_id serial not null
+    constraint artist_band_pkey primary key,
+    artist_id integer not null
+        constraint fk_artist
+            references Artist,
+    band_id integer not null
+        constraint fk_band
+            references Band
+);
+
 
 INSERT INTO public.Country (name) VALUES ('Poland');
 INSERT INTO public.Country (name) VALUES ('Russia');
@@ -86,4 +98,6 @@ INSERT INTO public.Album (name, studio_id) VALUES ('Pod ksiezycem', 1);
 INSERT INTO public.Artist (first_name, last_name, gender, instrument) VALUES ('Bob', 'Cat', 'male', 'guitar');
 
 INSERT INTO public.Band (name) VALUES ('Suchy chleb dla konia');
+
+INSERT INTO public.artist_band (artist_id, band_id) VALUES (1, 1);
 
