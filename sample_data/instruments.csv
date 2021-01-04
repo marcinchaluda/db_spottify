@@ -1,0 +1,545 @@
+id,instrument
+1,Accordion
+2,Acoustic bass guitar
+3,Acoustic guitar
+4,Acoustic bass guitar
+5,Aeolian harp
+6,Agung a Tamlang) (Philippine slit drum)
+7,Agung/ agong (Philippine gong)
+8,Ahoko (Ivory Coast rattle)
+9,Ajaeng
+10,Alboka (Spanish double hornpipe)
+11,Alphorn
+12,Alpine bell
+13,Alto clarinet
+14,Alto flute
+15,Alto horn
+16,Alto sarrusophone
+17,Alto saxophone
+18,Angklung (tuned bamboo slide rattle)
+19,Appalachian dulcimer
+20,Archlute
+21,Arghul (Arabic double pipe)
+22,Arpa anottolini (Italian hooked harp)
+23,Arpeggione (Italian six-string)
+24,Array Mbira (African thumb piano)
+25,Aru-ding (Philippine Jew’s harp)
+26,Aulochrome (double soprano saxophone)
+27,Babendil (Philippine gong)
+28,Baglama/ saz (Turkish strings)
+29,Balafon (xylophone from Ghana)
+30,Balalaika (Central Asian 2 or 3 stringed guitar)
+31,"Bandola (plucked lute from Cuba, Chile and Peru)"
+32,Bandoneón (Argentinian concertina)
+33,Bandurria (Spanish/ Latin American plucked lute)
+34,Banhu (Chinese bowed stringed instrument)
+35,Banjo
+36,Barbat (Iranian plucked lute)
+37,Baritone horn
+38,Baritone sarrusophone
+39,Baritone saxophone
+40,Baroque Wooden Flute
+41,Baryton (German Euphonium)
+42,Bass Clarinet
+43,Bass Drum
+44,Bass flute
+45,Bass guitar
+46,Bass sarrusophone
+47,Bass saxophone
+48,Bass/ baritone oboe
+49,Basse a Pistons (French Euphonium)
+50,Basse Cor
+51,Basset clarinet
+52,Basset horn
+53,Bassoon
+54,Bawu (Chinese wind instrument)
+55,Bayan (Russian Accordian)
+56,Bazooka
+57,Bell
+58,Berimbao (Brazilian musical bow)
+59,Bianqing (Chinese stone chimes)
+60,Bianzhong (Chinese bells)
+61,Bifora (Sicillian oboe)
+62,Biniou (French bagpipe)
+63,Biwa (Japanese short-necked lute)
+64,Bock (German bagpipes)
+65,Bodega (French bagpipe)
+66,Bodhrán (Irish drum)
+67,Boha (French bagpipe)
+68,Bombarde
+69,Bombardino (Spanish Euphonium)
+70,Bongo drum
+71,Border pipe/ lowland bagpipe
+72,Bordonua (Puerto Rican bass guitar)
+73,Bouzouki (Greek lute)
+74,Brian Boru bagpipes
+75,Bullroarer
+76,Button accordian
+77,Cabrette (French bagpipe)
+78,Calliope (steam organ)
+79,Carillon (Dutch harmonising bells)
+80,Carillon (Dutch harmonising bells)
+81,Castanets
+82,Cavaco (Spanish guitar)
+83,Cavaquinho (Portuguese guitar)
+84,Caxixi (Brazilian idiophone)
+85,Celesta (idiophone) invented 1886 in Paris by Auguste Mustel.
+86,Cello
+87,Ceng (Turkish harp)
+88,Chabrette (French bagpipe)
+89,Chapman stick (fretboard)
+90,Charango (South American fretted lute)
+91,Chenda (Indian drum)
+92,Chi (Chinese Transverse Flute)
+93,Chimes
+94,Ching (Cambodian/ Thai finger cymbals)
+95,Chitaronne (lower-toned lute)
+96,Chitarra battebte (Italian guitar)
+97,Chromatic accordian
+98,Cigar box guitar
+99,Cimbalom (Eastern European hammered dulcimer)
+100,Cimbasso
+101,Cimpoi (Romanian bagpipe)
+102,Cittern (Renaissance lute)
+103,Clapped hands
+104,Clarinet
+105,Clarinette d’amour
+106,Classical guitar
+107,Clavicembelo (Italian pianoforte)
+108,Clavichord
+109,Clavichord (European stringed keyboard)
+110,Concertina
+111,conch
+112,Conga (Caribbean drum)
+113,Contra-alto clarinet
+114,Contra-alto flute
+115,Contrabass á anche
+116,Contrabass clarinet
+117,Contrabass flute
+118,Contrabass oboe
+119,Contrabass Sarrusophone
+120,Contrabass saxophone
+121,Contrabassoon
+122,Cornet/ Cornett/ Cornetto/ Zink
+123,Cornish bagpipes
+124,Cowbell
+125,Croatian bagpipes
+126,Cromorne
+127,Crotales (Struck cymbals)
+128,Crumhorn
+129,Crwth (Welsh stringed instrument)
+130,Cuatro (Latin American lute)
+131,Cuíca (Brazilian drum)
+132,"Cymbals – crash, hi-hat, ride, splash, tom-toms, zil"
+133,Cymbalum (Western European hammered dulcimer)
+134,Da’uli da’uli (Indonesian xylophone)
+135,Dabakan (Philippine drum)
+136,Dadihu (contrabass erhu)
+137,Dahu (Chinese bowed stringed instrument)
+138,Daiko (Japanese drum)
+139,Dankiyo (Turkish bagpipe)
+140,Daraboukka (Syrian drum)
+141,Darabukka (Arabic drum)
+142,Darbuka (Greek drum)
+143,Darvyra (Greek Duct Flute)
+144,Denis d’or (ancient Czech chordophone)
+145,Dhol (Iranian drum)
+146,Dholak (North Indian hand drum)
+147,Didgeridoo (Aboriginal Natural Trumpet)
+148,Dihu (Chinese large bowed stringed instrument)
+149,Diyingehu (contrabass gehu)
+150,Djembe (West African hand drum)
+151,Doedelzak (Dutch bagpipe)
+152,Dombak (Iranian drum)
+153,Domra (Russian mandolin)
+154,Dotara (bass ektara)
+155,Double Bass
+156,Double contrabass flute
+157,Doulophone/ cuprophone
+158,Drum machine
+159,Dubreq stylophone
+160,Duct Flute
+161,Dudelsack (German bagpipe)
+162,Dudy (Czech bagpipes)
+163,Duff (Islamic tambourine)
+164,Dulcian (pre-1700’s Western European Bassoon)
+165,Dulcimer (hammered zither)
+166,Dulzaina (Spanish oboe)
+167,Dumbelek (Turkish drum)
+168,Dun dun (West African large talking drum)
+169,Dutar (Central Asian lute)
+170,Duxianqin (Chinese one-stringed zither)
+171,Ektara (Indian one-string)
+172,Electric guitar
+173,Electric organ
+174,Electric piano
+175,Electronic:
+176,English Horn/ Cor Anglais (French tenor Oboe)
+177,Erhu (Chinese violin)
+178,Erxian (Chinese bowed stringed instrument)
+179,Euphonium
+180,Fangxiang (Chinese metallophone)
+181,Fiddle
+182,Finger Cymbals
+183,Fingerboard synthesizer
+184,Fiscarmonica (Italian Accordian)
+185,Flageolets
+186,Flugelhorn
+187,Flute
+188,Folgerphone
+189,French Horn
+190,Gaida (Southern Balkan bagpipes)
+191,Gaita (Portuguese & Spanish bagpipe)
+192,Gajdy (Eastern European bagpipes)
+193,Gambang (Indonesian xylophone)
+194,Gan gan (West African small talking drum)
+195,Gandingan (Philippine set of 4 hanging gongs)
+196,Gandingan a kayo (Philippine xylophone)
+197,Ganza (Brazilian rattle)
+198,Gaohu (Chinese bowed stringed instrument)
+199,Gayageum (Korean zither)
+200,Gehu (Chinese cello-like)
+201,Gender (Indonesian brass xylophone)
+202,Geomungo/ komungo (Korean zither)
+203,Ghatam (Indian drum)
+204,Glass marimba
+205,Glasschord (crystallophone)
+206,Glockenspiel
+207,Gong
+208,Gottuvadhyam (Indian 21-stringed guitar)
+209,Great Highland bagpipe
+210,Great Irish warpipes
+211,Guan (Chinese pipe)
+212,Gugin (Chinese bridgeless zither)
+213,Guiro (South & Central American notched gourd that is scraped)
+214,Guitar
+215,Guitar 12 Strings
+216,Guitarrón (Mexican large bass guitar)
+217,Guqin (Chinese plucked zither)
+218,Gusle/ gusla (Balkan guitar)
+219,Gusli (Russian harp)
+220,Guzheng (Chinese zither)
+221,Hammered dulcimer
+222,Handbells
+223,Hang (steel hand drum)
+224,Hardanger fiddle
+225,Harmonica/ Mouth Organ
+226,Harmonium/ reed organ
+227,Harp
+228,Harp guitar
+229,Harpsichord
+230,Heckelphone
+231,Hegelong (Philippine fretted boat-lute)
+232,Hélicon
+233,Hichiriki (Japanese Oboe)
+234,Hocchiku (Japanese flute)
+235,Hooked harp
+236,Horagai (Japanese conch)
+237,Horn
+238,Hosho (Zimbabwean rattle)
+239,Hsaio (Chinese Duct Flute)
+240,Huemmelchen (German smallpipes)
+241,Huluhu (Chinese bowed stringed instrument)
+242,Hun (Korean flute)
+243,Hunting Horn
+244,Huqin (Chinese bowed stringed instrument)
+245,Hurdy Gurdy
+246,Igil (Tuvan bowed instrument)
+247,Inci (Philippine flute)
+248,Ipu (Hawaiian rattle)
+249,Irish bouzouki
+250,Irish Uilleann (Indoor bagpipe)
+251,Istarski mih (Croatian bagpipe)
+252,Janggu (Korean drum)
+253,Japanese Bamboo Flute/ Shakuhachi
+254,Jew’s harp
+255,Jew’s harp (plucked idiophone)
+256,Jiaohu (Chinese bowed stringed instrument)
+257,Jinghu (Chinese bowed stringed instrument)
+258,Jug
+259,Kadlong (Philippine fretted boat-lute)
+260,Kagul (Philippine slit drum)
+261,Kangling (Tibetan serunai)
+262,Kaval (Slovakian Duct Flute)
+263,Kèn b?u (Vietnamese reed)
+264,Kettle drum/ Timpani
+265,Keyed Bugle
+266,Keyed Trumpet
+267,Khene (Northeast Thailand mouth organ)
+268,Khim (Cambodian/ Thai hammered dulcimer)
+269,Khloy (Cambodian flute)
+270,Khol (South Indian drum)
+271,Kissar (West African lyre)
+272,Knatele (Finnish zither)
+273,Kokyu (Japanese bowed instrument)
+274,Komungo (Korean zither)
+275,Kora (West African 21-string harp-lute)
+276,Koto (Japanese zither)
+277,Koudi (Chinese flute)
+278,Koziol (Polish bagpipe)
+279,Kubing (Philippine Jew’s harp)
+280,Kulintang a kayo (Philippine xylophone)
+281,Kulintang a putao/ kulintang a tiniok (Philippine metallophone)
+282,Kulintang/ kolintang (Philippine gong group)
+283,Kutiyapi (Philippine fretted boat-lute)
+284,Kwa-yen (Chinese hanging drum)
+285,Kwintangen kayo/ luntang (Philippine xylophone)
+286,Lambeg (Irish drum)
+287,Lancashire great-pipe
+288,Langeleik (Norwegian stringed instrument)
+289,Laruan (Chinese stringed instrument)
+290,Lasso d’amore
+291,Launeddas (Sardinian triple clarinet)
+292,Leier (German hurdy gurdy)
+293,Leiqin (Chinese bowed instrument)
+294,Lirone
+295,Lithophone (stone barred xylophone)
+296,Lusheng (Chinese bamboo pipes)
+297,Lute
+298,Lyre
+299,Magyar duda (Hungarian bagpipes)
+300,Maguhu (Chinese bowed stringed instrument)
+301,Malimba (xylophone from the Congo)
+302,Mando-bass (bass mandolin)
+303,Mandocello (large mandolin)
+304,Mandola (US/ Canadian fretted stringed instrument)
+305,Mandolin
+306,Mangtong (Chinese bamboo pipes)
+307,Maraca
+308,Marimba
+309,Marimbao (Brazilian stringed instrument)
+310,Marinbaphone
+311,Mbira/ Sanza/ Thumb Piano (African stringed instrument)
+312,Mellophone
+313,Mellotron (polyphonic keyboard)
+314,Melodeon
+315,Melodica
+316,Metallophones (metal barred xylophone)
+317,Mijwiz (Arabic double pipe)
+318,Mittlealtersackpfeife (German medieval bagpipe)
+319,Mizwad (Arabic bagpipe)
+320,Mohan veena (Indian guitar)
+321,Moodswinger (zither)
+322,Māorin khuur/ morin huur (Mongolian fiddle)
+323,Mridangam (South Indian drum)
+324,Muchosac (Belgian bagpipe)
+325,Musette bressane (French bagpipe)
+326,Musette de cour (French bagpipe)
+327,Musette du centre (French bagpipe)
+328,Musical bow
+329,Musical Saw (wood cutting saw)
+330,Nadaswaram (Indian wind instrument)
+331,Naqara (Mongolian war drum)
+332,Natural Trumpet
+333,Nay (Syrian wooden flute)
+334,Ney (Lebanese Flute)
+335,Northumbrian smallpipes
+336,Nose flute
+337,Nyckelharpa (Swedish key harp)
+338,Oboe
+339,Oboe d’amore
+340,Oboe da caccia
+341,Ocarina
+342,Octaban (cylinder drum)
+343,Octapad (electronic drumpad)
+344,Octave mandolin
+345,Octavin
+346,Octocontra-alto clarinet
+347,Octocontrabass clarinet
+348,Oliphant/ Cor d’Oliphant
+349,Ondes martenot (electronic keyboard and slide)
+350,Ophicleide
+351,Organ - electric
+352,Organ pipe
+353,Overtone guitar
+354,Paixiao (Chinese flute)
+355,Palendang (Philippine flute)
+356,Pan pipes
+357,Pastoral pipes
+358,Piano
+359,Piccolo
+360,Piccolo clarinet
+361,Piccolo heckelphone
+362,Piccolo oboe
+363,Pipa (Chinese lute)
+364,Pipe organ
+365,Piva (Northern Italian bagpipe)
+366,Psaltery (plucked zither)
+367,Pulalu (Philippine flute)
+368,Qanun (Turkish zither)
+369,Quena (Andean flute)
+370,Quinticlave (Ophicleide)
+371,Racket
+372,Rainstick
+373,Raita (Moroccan serunai)
+374,Rajao (Portuguese guitar)
+375,Ranat ek elk (Thai metallophone)
+376,Ranat thum lek (Thai metallophone)
+377,Ratchet
+378,Rattle
+379,Rebab (Arabic bowed stringed instrument)
+380,Rebec (15th/ 16th century rebab)
+381,Recorder (Descant)
+382,Reed contrabass
+383,Reed Pipe
+384,Riq/ riqq/ rik (Arabic tambourine)
+385,Roman tuba
+386,Ruan (Chinese plucked stringed instrument)
+387,Rudra veena (Indian plucked stringed instrument)
+388,Ryuteki (Japanese flute)
+389,Sabar (Senegalese drum)
+390,Sac de gemecs (Catalonian bagpipe)
+391,Sackbutt (trombone family’s ancestor)
+392,Säckpipa (Swedish bagpipe)
+393,Saenghwang (Korean mouth organ)
+394,Sallaneh (Iranian plucked stringed instrument)
+395,Sampho (Cambodian barrel drum)
+396,Sampler
+397,Sang-auk (Burmese harp)
+398,Santur (North Indian hammered zither)
+399,Sanxian (Chinese lute)
+400,Saraswati veena (South Indian lute)
+401,Sarrusophone
+402,Sarunay/ saronay/ sarunai/ saronai (Philippine metallophone)
+403,Saung (Burmese harp)
+404,Saw ou (Thai bowed stringed instrument)
+405,Saw sam sai (Thai bowed stringed instrument)
+406,Saxhorn
+407,Saxonette
+408,Saxophone
+409,Schweizer sackpfeife (Swiss bagpipe)
+410,Scottish smallpipes
+411,Se (Chinese zither)
+412,Serpent
+413,Serunai (Islamic reed instrument)
+414,Setar (Iranian lute)
+415,Shamisen (Japanese 3-stringed instrument)
+416,Shawm (Renaissance oboe)
+417,Shekere (African rattle)
+418,Sheng (Chinese mouth organ)
+419,Shinobue (Japanese flute)
+420,Shofar (Jewish horn)
+421,Sihu (Chinese bowed stringed instrument)
+422,Singing bowl/ rin gong (Himalayan standing bell)
+423,Siren
+424,Sitar (South Asian lute)
+425,Sleigh Bells
+426,Slide guitar
+427,Slide whistle
+428,Slit drum
+429,Snare Drum
+430,Sopranino clarinet
+431,Sopranino saxophone
+432,Soprano clarinet
+433,Soprano mandolin
+434,Soprano saxophone
+435,soprillo
+436,Sorna (Afghan serunai)
+437,Sousaphone
+438,Spoons
+439,Sralai (Cambodian reed)
+440,Steel drum
+441,Steel guitar
+442,Subcontrabass flute
+443,Subcontrabass saxophone
+444,Suling (Indonsian/Philippine flute)
+445,Suona (Chinese serunai)
+446,Synclavier
+447,Synthesizer
+448,Tabla (Indian/ Pakistani drum)
+449,Tagutok (Philippine slit drum)
+450,Taiko (Japanese drum)
+451,Talking drum
+452,Tambour (French drum)
+453,Tambourine
+454,Tamburitza (Croatian/ Serbian mandolin)
+455,Tan-tan (Brazilian hand drum)
+456,Taphon (Thai drum)
+457,Tar (Persian lute)
+458,Tárogató (Hungarian shawm)
+459,Tea chest bass (skiffle bass)
+460,Tenor horn
+461,Tenor mandola (European/ UK fretted stringed instrument)
+462,Tenor sarrusophone
+463,Tenor saxophone
+464,Tenoroon (tenor bassoon)
+465,Teponaztli (Mexican wooden drum)
+466,Thavil (Indian drum)
+467,Theorbo (lower-toned lute)
+468,Theremin (oscillator)
+469,Timpani/ kettle drum
+470,Timple (Canary Islands/ Murcia ukulele)
+471,Tin whistle
+472,Tjelempung/ Celempung (Javanese zither)
+473,Tom-tom
+474,Tonette (plastic recorder)
+475,Torupill (Estonian bagpipe)
+476,Transverse Flute (Traditional Flute)
+477,Trekspill (Norwegian Accordian)
+478,Tres (Cuban chordophone)
+479,Triangle
+480,Tro u (Cambodian bowed stringed instrument)
+481,Tromba marina (European stringed instrument)
+482,Trombone
+483,Tromboon/ babone
+484,Trompeta china (Cuban suona)
+485,Trumpet
+486,Trumpet Bb
+487,Tsampouna (Greek bagpipe)
+488,Tsuri-daiko (Japanese hanging drum)
+489,Tuba
+490,Tubular Bells
+491,Tuhu (Chinese bowed stringed instrument)
+492,Tulum (Turkish bagpipe)
+493,Tumpong (Philippine flute)
+494,Turntables
+495,Ud/ oud (Arabic and Islamic lute)
+496,Udu (African clay drum)
+497,Ukulele (Hawaiian guitar)
+498,Valiha (Indonesian and Madagascan zither)
+499,Vertical flute
+500,Vertical viola
+501,Veuze (French bagpipe)
+502,Vibraphone/ vibraharp
+503,Vichitra veena (Indian stringed instrument)
+504,Vielle (French hurdy gurdy)
+505,Vihuela (Spanish 2-string guitar)
+506,Viola
+507,Viola d’amore
+508,Viola da gamba
+509,Viola organista
+510,Violin
+511,Violotta
+512,Vladimirsky Rozhok
+513,Volinka (Russian bagpipes)
+514,Wagner Tuba
+515,Washboard
+516,Washint (Ethiopian flute)
+517,Washtub bass
+518,Welsh pipes
+519,Whip
+520,Whistle
+521,Willow flute
+522,Wind Chimes
+523,Xalam/ khalam (West African Banjo-like instrument)
+524,Xiao (Chinese flute)
+525,Xiaodihu (tenor erhu)
+526,Xun (Chinese flute)
+527,Xylophone
+528,Xylorimba (extended range xylophone)
+529,Yang chi’in (Chinese zither)
+530,Yang Chin (Chinese hammered dulcimer)
+531,Yayli tanbur (Turkish lute)
+532,Yazheng (Chinese zither)
+533,Yehu (Chinese bowed stringed instrument)
+534,Yu (Chinese bamboo pipes)
+535,Yueh Ch’in (Chinese lute)
+536,Yun Lo (Chinese gong)
+537,Zampogna (Italian bagpipe)
+538,Zaqq (Maltese bagpipe)
+539,Zhongdihu (bass erhu)
+540,Zhuihu (Chinese bowed stringed instrument)
+541,Zither
+542,Zonghu (Chinese bowed stringed instrument)
+543,Zufalo (Italian flute)
+544,Zurna (Turkish serunai)
