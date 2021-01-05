@@ -33,6 +33,7 @@ def generate_sample_data():
     __generate_playlists()
     __generate_songs()
     __generate_user_playlists()
+    __generate_subscriptions()
 
 
 def __generate_addresses():
@@ -193,3 +194,17 @@ def __generate_user_playlists():
         user_playlists.append(user_playlist)
 
     add_user_playlists(user_playlists)
+
+
+def __generate_subscriptions():
+    subscriptions = []
+
+    for _ in range(USERS_AMOUNT):
+        date = get_random_date()
+        user_id = randint(1, USERS_AMOUNT)
+        band_id = randint(1, BANDS_AMOUNT)
+
+        subscription = date, user_id, band_id
+        subscriptions.append(subscription)
+
+    add_subscriptions(subscriptions)
