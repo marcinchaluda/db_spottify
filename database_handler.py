@@ -49,6 +49,13 @@ def add_addresses(cursor: RealDictCursor, addresses_amount: int, countries_amoun
 
 
 @database_common.connection_handler
+def add_users(cursor: RealDictCursor, users_data):
+    f = IteratorFile(("{}\t{}\t{}\t{}".format(user[0], user[1], user[2], user[3]) for user in users_data))
+
+    cursor.copy_from(f, 'user_account', columns=(['first_name', 'last_name', 'email', 'address_id']))
+
+
+@database_common.connection_handler
 def add_bands(cursor: RealDictCursor, bands_amount: int, bands):
     f = IteratorFile(("{}\t{}".format(bands[randint(1, len(bands) - 1)],
                                       get_random_date()) for _ in range(bands_amount)))

@@ -49,6 +49,45 @@ def read_street_names_from_files():
     return streets
 
 
+def get_first_names():
+    first_names = []
+
+    first_name_index = 1
+    with open("sample_data/first_name.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            first_names.append(line[first_name_index])
+
+    return first_names
+
+
+def get_last_names():
+    last_names = []
+
+    last_name_index = 1
+    with open("sample_data/last_name.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            last_names.append(line[last_name_index])
+
+    return last_names
+
+
+def get_domains():
+    domains = []
+
+    domain_index = 1
+    with open("sample_data/domain.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            domains.append(line[domain_index])
+
+    return domains
+
+
 def read_bands_from_file():
     bands = []
     band_name = 1
