@@ -9,9 +9,10 @@ CITIES_AMOUNT = 0
 COUNTRIES_AMOUNT = 0
 GENRES_AMOUNT = 0
 STREETS_AMOUNT = 0
-ADDRESSES_AMOUNT = 100000
+STUDIOS_AMOUNT = 0
+ADDRESSES_AMOUNT = 10000
 BANDS_AMOUNT = 15000
-USERS_AMOUNT = 100000
+USERS_AMOUNT = 10000
 FIRST_NAMES_AMOUNT = len(FIRST_NAMES)
 LAST_NAMES_AMOUNT = len(LAST_NAMES)
 
@@ -21,6 +22,7 @@ def generate_sample_data():
     __generate_addresses()
     __generate_users()
     __generate_bands()
+    __generate_studios()
 
 
 def __generate_addresses():
@@ -83,3 +85,16 @@ def __generate_users_data():
         users_data.append(user_data)
 
     return users_data
+
+
+def __generate_studios():
+    global STUDIOS_AMOUNT
+    studios = read_csv_file("street_name")
+    STUDIOS_AMOUNT = len(studios)
+
+    studios_data = []
+    for studio in studios:
+        studios_data.append((studio, randint(1, ADDRESSES_AMOUNT)))
+
+    add_studios(studios_data)
+
