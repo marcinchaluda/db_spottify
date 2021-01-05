@@ -67,3 +67,10 @@ def add_bands(cursor: RealDictCursor, bands_amount: int, bands):
                                       get_random_date()) for _ in range(bands_amount)))
 
     cursor.copy_from(f, 'band', columns=(['name', 'band_establishment']))
+
+
+@database_common.connection_handler
+def add_artists(cursor: RealDictCursor, artists_data):
+    f = IteratorFile(("{}\t{}\t{}\t{}".format(artist[0], artist[1], artist[2], artist[3]) for artist in artists_data))
+
+    cursor.copy_from(f, 'artist', columns=(['first_name', 'last_name', 'gender', 'instrument']))

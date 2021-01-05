@@ -13,6 +13,7 @@ STUDIOS_AMOUNT = 0
 ADDRESSES_AMOUNT = 100000
 BANDS_AMOUNT = 15000
 USERS_AMOUNT = 100000
+ARTISTS_AMOUNT = 100000
 FIRST_NAMES_AMOUNT = len(FIRST_NAMES)
 LAST_NAMES_AMOUNT = len(LAST_NAMES)
 
@@ -23,6 +24,7 @@ def generate_sample_data():
     __generate_users()
     __generate_bands()
     __generate_studios()
+    __generate_artists()
 
 
 def __generate_addresses():
@@ -98,3 +100,27 @@ def __generate_studios():
 
     add_studios(studios_data)
 
+
+
+def __generate_artists():
+    artist_data = __generate_artists_data()
+    add_artists(artist_data)
+
+
+def __generate_artists_data():
+    artists_data = []
+
+    genders = ['male', 'female']
+    instruments = read_csv_file("instruments")
+    instruments_amount = len(instruments)
+    genders_length = len(genders)
+
+    for _ in range(ARTISTS_AMOUNT):
+        first_name = FIRST_NAMES[randint(0, FIRST_NAMES_AMOUNT - 1)]
+        last_name = LAST_NAMES[randint(0, LAST_NAMES_AMOUNT - 1)]
+        gender = genders[randint(0, genders_length - 1)]
+        instrument = instruments[randint(0, instruments_amount - 1)]
+        artist_data = first_name, last_name, gender, instrument
+        artists_data.append(artist_data)
+
+    return artists_data
