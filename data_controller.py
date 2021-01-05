@@ -32,6 +32,7 @@ def generate_sample_data():
     __generate_artists()
     __generate_playlists()
     __generate_songs()
+    __generate_user_playlists()
 
 
 def __generate_addresses():
@@ -179,3 +180,16 @@ def __generate_songs_data():
         songs_data.append(song_data)
 
     return songs_data
+
+
+def __generate_user_playlists():
+    user_playlists = []
+
+    for _ in range(USERS_AMOUNT):
+        user_id = randint(1, USERS_AMOUNT)
+        playlist_id = randint(1, PLAYLISTS_AMOUNT)
+
+        user_playlist = user_id, playlist_id
+        user_playlists.append(user_playlist)
+
+    add_user_playlists(user_playlists)
