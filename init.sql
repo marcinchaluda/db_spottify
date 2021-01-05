@@ -103,8 +103,8 @@ create table Song
 (
     song_id serial not null
     constraint song_pkey primary key,
-    name varchar(100) not null,
-    length varchar(10) not null,
+    name varchar(200) not null,
+    length varchar(15) not null,
     views integer not null,
     album_id integer not null
         constraint fk_album
