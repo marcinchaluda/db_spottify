@@ -22,6 +22,7 @@ def generate_sample_data():
     __generate_addresses()
     __generate_users()
     __generate_bands()
+    __generate_artists()
 
 
 def __generate_addresses():
