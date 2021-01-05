@@ -34,6 +34,7 @@ def generate_sample_data():
     __generate_songs()
     __generate_user_playlists()
     __generate_subscriptions()
+    __generate_playlist_songs()
 
 
 def __generate_addresses():
@@ -208,3 +209,22 @@ def __generate_subscriptions():
         subscriptions.append(subscription)
 
     add_subscriptions(subscriptions)
+
+
+def __generate_playlist_songs():
+    playlist_songs = []
+
+    for playlist_id in range(1, PLAYLISTS_AMOUNT + 1):
+        playlist_songs = __add_songs_to_playlist(playlist_songs, playlist_id)
+
+    add_songs_to_playlists(playlist_songs)
+
+
+def __add_songs_to_playlist(playlist_songs, playlist_id: int):
+    for _ in range(randint(8, 25)):
+        song_id = randint(1, SONGS_AMOUNT)
+
+        playlist = song_id, playlist_id
+        playlist_songs.append(playlist)
+
+    return playlist_songs
