@@ -12,3 +12,7 @@ def get_random_date():
     # if the value happens to be in the leap year range, try again
     except ValueError:
         return get_random_date(year)
+
+
+def get_random_song_length():
+    return f'{random.randint(1, 10)}min {random.randint(0, 59)}sec'
