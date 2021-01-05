@@ -6,11 +6,13 @@ COUNTRIES_AMOUNT = 0
 GENRES_AMOUNT = 0
 STREETS_AMOUNT = 0
 ADDRESSES_AMOUNT = 100000
+BANDS_AMOUNT = 15000
 
 
 def generate_sample_data():
     init_database()
     __generate_addresses()
+    __generate_bands()
 
 
 def __generate_addresses():
@@ -19,6 +21,11 @@ def __generate_addresses():
     __insert_genres()
     __insert_streets()
     add_addresses(ADDRESSES_AMOUNT, COUNTRIES_AMOUNT, CITIES_AMOUNT, STREETS_AMOUNT)
+
+
+def __generate_bands():
+    bands = read_bands_from_file()
+    add_bands(BANDS_AMOUNT, bands)
 
 
 def __insert_cities():
