@@ -1,6 +1,7 @@
 from database_handler import *
 from csv_files_handler import *
 from random import randint
+from util import get_random_date
 
 FIRST_NAMES = read_csv_file("first_name")
 LAST_NAMES = read_csv_file("last_name")
@@ -14,6 +15,7 @@ ADDRESSES_AMOUNT = 100000
 BANDS_AMOUNT = 15000
 USERS_AMOUNT = 100000
 ARTISTS_AMOUNT = 100000
+ALBUMS_AMOUNT = 45000
 FIRST_NAMES_AMOUNT = len(FIRST_NAMES)
 LAST_NAMES_AMOUNT = len(LAST_NAMES)
 
@@ -24,6 +26,7 @@ def generate_sample_data():
     __generate_users()
     __generate_bands()
     __generate_studios()
+    __generate_albums()
     __generate_artists()
 
 
@@ -101,7 +104,6 @@ def __generate_studios():
     add_studios(studios_data)
 
 
-
 def __generate_artists():
     artist_data = __generate_artists_data()
     add_artists(artist_data)
@@ -124,3 +126,26 @@ def __generate_artists_data():
         artists_data.append(artist_data)
 
     return artists_data
+
+
+def __generate_albums():
+    albums_data = __generate_albums_data()
+    add_albums(albums_data)
+
+
+def __generate_albums_data():
+    albums_names = read_csv_file('album')
+    albums_names_amount = len(albums_names)
+
+    albums_data = []
+    for _ in range(ARTISTS_AMOUNT):
+        album_name = albums_names[randint(0, albums_names_amount - 1)]
+        date = get_random_date()
+        studio_id = randint(1, STUDIOS_AMOUNT)
+        band_id = randint(1, BANDS_AMOUNT)
+        album_data = album_name, date, studio_id, band_id
+        albums_data.append(album_data)
+
+    return albums_data
+
+
