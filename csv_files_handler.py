@@ -47,3 +47,15 @@ def read_street_names_from_files():
             streets.append(line[country_name])
 
     return streets
+
+
+def read_bands_from_file():
+    bands = []
+    band_name = 1
+    with open("sample_data/band_name.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            bands.append(line[band_name])
+
+    return bands
