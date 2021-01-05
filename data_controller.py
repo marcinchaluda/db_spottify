@@ -13,6 +13,7 @@ ADDRESSES_AMOUNT = 100000
 BANDS_AMOUNT = 15000
 USERS_AMOUNT = 100000
 ARTISTS_AMOUNT = 100000
+PLAYLISTS_AMOUNT = 50000
 FIRST_NAMES_AMOUNT = len(FIRST_NAMES)
 LAST_NAMES_AMOUNT = len(LAST_NAMES)
 
@@ -23,6 +24,7 @@ def generate_sample_data():
     __generate_users()
     __generate_bands()
     __generate_artists()
+    __generate_playlists()
 
 
 def __generate_addresses():
@@ -109,3 +111,8 @@ def __generate_artists_data():
         artists_data.append(artist_data)
 
     return artists_data
+
+
+def __generate_playlists():
+    playlists = read_csv_file("playlist")
+    add_playlists(PLAYLISTS_AMOUNT, playlists)
