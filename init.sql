@@ -118,7 +118,7 @@ create table Playlist
 (
     playlist_id serial not null
     constraint playlist_pkey primary key,
-    name varchar(100) not null,
+    name varchar(200) not null,
     date timestamp default now()
 );
 
