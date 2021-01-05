@@ -96,3 +96,10 @@ def add_playlists(cursor: RealDictCursor, playlists_amount: int, playlists):
                                       get_random_date()) for _ in range(playlists_amount)))
 
     cursor.copy_from(f, 'playlist', columns=(['name', 'date']))
+
+
+@database_common.connection_handler
+def add_user_playlists(cursor: RealDictCursor, user_playlists):
+    f = IteratorFile(("{}\t{}".format(*user_playlist) for user_playlist in user_playlists))
+
+    cursor.copy_from(f, 'user_playlist', columns=(['user_id', 'playlist_id']))
