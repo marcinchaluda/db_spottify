@@ -70,7 +70,7 @@ create table Album
 (
     album_id serial not null
     constraint album_pkey primary key,
-    name varchar(100) not null,
+    name varchar(200) not null,
     date timestamp default now(),
     studio_id integer not null
         constraint fk_studio
@@ -103,8 +103,8 @@ create table Song
 (
     song_id serial not null
     constraint song_pkey primary key,
-    name varchar(100) not null,
-    length varchar(10) not null,
+    name varchar(200) not null,
+    length varchar(15) not null,
     views integer not null,
     album_id integer not null
         constraint fk_album
