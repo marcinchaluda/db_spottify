@@ -2,8 +2,8 @@ from database_handler import *
 from csv_files_handler import *
 from random import randint
 
-FIRST_NAMES = get_first_names()
-LAST_NAMES = get_last_names()
+FIRST_NAMES = read_csv_file("first_name")
+LAST_NAMES = read_csv_file("last_name")
 
 CITIES_AMOUNT = 0
 COUNTRIES_AMOUNT = 0
@@ -32,34 +32,34 @@ def __generate_addresses():
 
 
 def __generate_bands():
-    bands = read_bands_from_file()
+    bands = read_csv_file("band_name")
     add_bands(BANDS_AMOUNT, bands)
 
 
 def __insert_cities():
     global CITIES_AMOUNT
-    cities = read_cities_from_files()
+    cities = read_csv_file("cities")
     add_cities(cities)
     CITIES_AMOUNT = len(cities)
 
 
 def __insert_countries():
     global COUNTRIES_AMOUNT
-    countries = read_countries_from_files()
+    countries = read_csv_file("country")
     add_countries(countries)
     COUNTRIES_AMOUNT = len(countries)
 
 
 def __insert_genres():
     global GENRES_AMOUNT
-    genres = read_genres_from_file()
+    genres = read_csv_file("genres")
     add_genres(genres)
     GENRES_AMOUNT = len(genres)
 
 
 def __insert_streets():
     global STREETS_AMOUNT
-    streets = read_street_names_from_files()
+    streets = read_csv_file("street_name")
     add_streets(streets)
     STREETS_AMOUNT = len(streets)
 
@@ -72,7 +72,7 @@ def __generate_users():
 def __generate_users_data():
     users_data = []
 
-    domains = get_domains()
+    domains = read_csv_file("domain")
     domains_amount = len(domains)
 
     for _ in range(USERS_AMOUNT):
