@@ -1,5 +1,6 @@
 from psycopg2.extras import RealDictCursor
 from iter_file import IteratorFile
+from util import get_random_date
 
 import database_common
 from random import randint
@@ -45,3 +46,11 @@ def add_addresses(cursor: RealDictCursor, addresses_amount: int, countries_amoun
                                               randint(1, countries_amount)) for _ in range(addresses_amount)))
 
     cursor.copy_from(f, 'address', columns=(['street_id', 'local_number', 'city_id', 'country_id']))
+
+
+@database_common.connection_handler
+def add_bands(cursor: RealDictCursor, bands_amount: int, bands):
+    f = IteratorFile(("{}\t{}".format(bands[randint(1, len(bands) - 1)],
+                                      get_random_date()) for _ in range(bands_amount)))
+
+    cursor.copy_from(f, 'band', columns=(['name', 'band_establishment']))
