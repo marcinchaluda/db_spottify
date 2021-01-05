@@ -88,3 +88,11 @@ def add_songs(cursor: RealDictCursor, songs_data):
     f = IteratorFile(("{}\t{}\t{}\t{}\t{}".format(*song) for song in songs_data))
 
     cursor.copy_from(f, 'song', columns=(['name', 'length', 'views', 'album_id', 'genre_id']))
+
+
+@database_common.connection_handler
+def add_playlists(cursor: RealDictCursor, playlists_amount: int, playlists):
+    f = IteratorFile(("{}\t{}".format(playlists[randint(1, len(playlists) - 1)],
+                                      get_random_date()) for _ in range(playlists_amount)))
+
+    cursor.copy_from(f, 'playlist', columns=(['name', 'date']))
