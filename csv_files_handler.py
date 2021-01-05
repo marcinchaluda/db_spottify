@@ -23,3 +23,15 @@ def read_countries_from_files():
             countries.append(line[country_name])
 
     return countries
+
+
+def read_genres_from_file():
+    genres = []
+    genre_name = 1
+    with open("sample_data/genres.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            genres.append(line[genre_name])
+
+    return genres
