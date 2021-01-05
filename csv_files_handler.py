@@ -35,3 +35,15 @@ def read_genres_from_file():
             genres.append(line[genre_name])
 
     return genres
+
+
+def read_street_names_from_files():
+    streets = []
+    country_name = 1
+    with open("sample_data/street_name.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            streets.append(line[country_name])
+
+    return streets
