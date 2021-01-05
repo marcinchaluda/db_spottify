@@ -19,3 +19,9 @@ def add_cities(cursor: RealDictCursor, cities):
 def add_countries(cursor: RealDictCursor, countries):
     f = IteratorFile(("{}".format(x) for x in countries))
     cursor.copy_from(f, 'country', columns=(['name']))
+
+
+@database_common.connection_handler
+def add_streets(cursor: RealDictCursor, streets):
+    f = IteratorFile(("{}".format(x) for x in streets))
+    cursor.copy_from(f, 'street', columns=(['name']))

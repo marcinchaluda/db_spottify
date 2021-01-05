@@ -23,3 +23,15 @@ def read_countries_from_files():
             countries.append(line[country_name])
 
     return countries
+
+
+def read_street_names_from_files():
+    streets = []
+    country_name = 1
+    with open("sample_data/street_name.csv", "r") as csvfile:
+        reader = list(csv.reader(csvfile))
+
+        for line in reader:
+            streets.append(line[country_name])
+
+    return streets

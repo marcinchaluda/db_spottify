@@ -3,12 +3,14 @@ from csv_files_handler import *
 
 CITIES_AMOUNT = 0
 COUNTRIES_AMOUNT = 0
+STREETS_AMOUNT = 0
 
 
 def generate_sample_data():
     init_database()
     __insert_cities()
     __insert_countries()
+    __insert_streets()
 
 
 def __insert_cities():
@@ -23,3 +25,11 @@ def __insert_countries():
     countries = read_countries_from_files()
     add_countries(countries)
     COUNTRIES_AMOUNT = len(countries)
+
+
+def __insert_streets():
+    global STREETS_AMOUNT
+    streets = read_street_names_from_files()
+    add_streets(streets)
+    STREETS_AMOUNT = len(streets)
+

@@ -90,6 +90,13 @@ create table Genre
     type varchar(100) not null
 );
 
+create table Street
+(
+    street_id serial not null
+    constraint street_pkey primary key,
+    name varchar(100) not null
+);
+
 create table Song
 (
     song_id serial not null
