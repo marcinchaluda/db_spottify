@@ -30,6 +30,7 @@ def generate_sample_data():
     __generate_studios()
     __generate_albums()
     __generate_artists()
+    __generate_bands_members()
     __generate_playlists()
     __generate_songs()
     __generate_user_playlists()
@@ -228,3 +229,22 @@ def __add_songs_to_playlist(playlist_songs, playlist_id: int):
         playlist_songs.append(playlist)
 
     return playlist_songs
+
+
+def __generate_bands_members():
+    bands_members = []
+
+    for bands_id in range(1, BANDS_AMOUNT + 1):
+        bands_members = __add_members_to_bands(bands_members, bands_id)
+
+    add_members_to_bands(bands_members)
+
+
+def __add_members_to_bands(bands_members, band_id: int):
+    for _ in range(randint(2, 8)):
+        artist_id = randint(1, ARTISTS_AMOUNT)
+
+        band_member = artist_id, band_id
+        bands_members.append(band_member)
+
+    return bands_members

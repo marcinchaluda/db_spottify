@@ -117,3 +117,10 @@ def add_subscriptions(cursor: RealDictCursor, subscriptions):
     f = IteratorFile(("{}\t{}\t{}".format(*subscription) for subscription in subscriptions))
 
     cursor.copy_from(f, 'subscription', columns=(['date', 'user_id', 'band_id']))
+
+
+@database_common.connection_handler
+def add_members_to_bands(cursor: RealDictCursor, bands_members):
+    f = IteratorFile(("{}\t{}".format(*band_member) for band_member in bands_members))
+
+    cursor.copy_from(f, 'artist_band', columns=(['artist_id', 'band_id']))
