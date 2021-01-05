@@ -15,11 +15,20 @@ create table City
     name varchar(100) not null
 );
 
+create table Street
+(
+    street_id serial not null
+    constraint street_pkey primary key,
+    name varchar(100) not null
+);
+
 create table Address
 (
     address_id serial not null
     constraint address_pkey primary key,
-    street varchar(100) not null,
+    street_id integer not null
+            constraint fk_street
+            references Street,
     local_number integer not null,
     city_id integer not null
         constraint fk_city
@@ -88,13 +97,6 @@ create table Genre
     genre_id serial not null
     constraint genre_pkey primary key,
     type varchar(100) not null
-);
-
-create table Street
-(
-    street_id serial not null
-    constraint street_pkey primary key,
-    name varchar(100) not null
 );
 
 create table Song

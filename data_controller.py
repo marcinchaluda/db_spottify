@@ -4,13 +4,19 @@ from csv_files_handler import *
 CITIES_AMOUNT = 0
 COUNTRIES_AMOUNT = 0
 STREETS_AMOUNT = 0
+ADDRESSES_AMOUNT = 100000
 
 
 def generate_sample_data():
     init_database()
+    __generate_addresses()
+
+
+def __generate_addresses():
     __insert_cities()
     __insert_countries()
     __insert_streets()
+    add_addresses(ADDRESSES_AMOUNT, COUNTRIES_AMOUNT, CITIES_AMOUNT, STREETS_AMOUNT)
 
 
 def __insert_cities():
