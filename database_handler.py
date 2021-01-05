@@ -36,6 +36,12 @@ def add_streets(cursor: RealDictCursor, streets):
 
 
 @database_common.connection_handler
+def add_studios(cursor: RealDictCursor, studios_data):
+    f = IteratorFile(("{}\t{}".format(*studio) for studio in studios_data))
+    cursor.copy_from(f, 'studio', columns=(['name', 'address_id']))
+
+
+@database_common.connection_handler
 def add_addresses(cursor: RealDictCursor, addresses_amount: int, countries_amount: int, cities_amount: int,
                   street_amount: int):
     max_local_number = 1000
@@ -50,7 +56,7 @@ def add_addresses(cursor: RealDictCursor, addresses_amount: int, countries_amoun
 
 @database_common.connection_handler
 def add_users(cursor: RealDictCursor, users_data):
-    f = IteratorFile(("{}\t{}\t{}\t{}".format(user[0], user[1], user[2], user[3]) for user in users_data))
+    f = IteratorFile(("{}\t{}\t{}\t{}".format(*user) for user in users_data))
 
     cursor.copy_from(f, 'user_account', columns=(['first_name', 'last_name', 'email', 'address_id']))
 
