@@ -15,12 +15,9 @@ ADDRESSES_AMOUNT = 100000
 BANDS_AMOUNT = 15000
 USERS_AMOUNT = 100000
 ARTISTS_AMOUNT = 100000
-<<<<<<< HEAD
 PLAYLISTS_AMOUNT = 50000
-=======
 ALBUMS_AMOUNT = 45000
 SONGS_AMOUNT = 675000
->>>>>>> master
 FIRST_NAMES_AMOUNT = len(FIRST_NAMES)
 LAST_NAMES_AMOUNT = len(LAST_NAMES)
 
@@ -33,11 +30,8 @@ def generate_sample_data():
     __generate_studios()
     __generate_albums()
     __generate_artists()
-<<<<<<< HEAD
     __generate_playlists()
-=======
     __generate_songs()
->>>>>>> master
 
 
 def __generate_addresses():
@@ -138,11 +132,11 @@ def __generate_artists_data():
     return artists_data
 
 
-<<<<<<< HEAD
 def __generate_playlists():
     playlists = read_csv_file("playlist")
     add_playlists(PLAYLISTS_AMOUNT, playlists)
-=======
+
+
 def __generate_albums():
     albums_data = __generate_albums_data()
     add_albums(albums_data)
@@ -185,4 +179,3 @@ def __generate_songs_data():
         songs_data.append(song_data)
 
     return songs_data
->>>>>>> master
