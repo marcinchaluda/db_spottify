@@ -138,7 +138,7 @@ def __generate_albums_data():
     albums_names_amount = len(albums_names)
 
     albums_data = []
-    for _ in range(ARTISTS_AMOUNT):
+    for _ in range(ALBUMS_AMOUNT):
         album_name = albums_names[randint(0, albums_names_amount - 1)]
         date = get_random_date()
         studio_id = randint(1, STUDIOS_AMOUNT)
