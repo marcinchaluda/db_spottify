@@ -170,3 +170,27 @@ create table Subscription
     constraint fk_band
         references Band
 );
+
+CREATE TABLE User_newsletter
+(
+    user_id INT NOT NULL,
+    email VARCHAR(100),
+    active BOOLEAN default True
+);
+
+CREATE OR REPLACE FUNCTION subscribe_newsletter()
+  RETURNS TRIGGER
+  LANGUAGE PLPGSQL
+  AS
+$$
+BEGIN
+    INSERT INTO User_newsletter (user_id, email) VALUES (NEW.user_id, NEW.email);
+    RETURN NEW;
+END;
+$$;
+
+CREATE TRIGGER add_subscription
+  AFTER INSERT
+  ON User_account
+  FOR EACH ROW
+  EXECUTE PROCEDURE subscribe_newsletter();
