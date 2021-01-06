@@ -102,7 +102,7 @@ def __generate_users_data():
 
 def __generate_studios():
     global STUDIOS_AMOUNT
-    studios = read_csv_file("street_name")
+    studios = read_csv_file("studio_name")
     STUDIOS_AMOUNT = len(studios)
 
     studios_data = []
