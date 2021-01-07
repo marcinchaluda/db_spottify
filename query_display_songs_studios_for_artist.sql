@@ -10,12 +10,11 @@ AS $artist_songs$
 BEGIN
     RETURN QUERY
         SELECT s.name, st.name FROM artist a
-        LEFT JOIN artist_band ab ON a.artist_id = ab.artist_id
-        LEFT JOIN band b ON ab.band_id = b.band_id
-        LEFT JOIN album al ON b.band_id = al.band_id
-        LEFT JOIN song s ON al.album_id = s.album_id
-        LEFT JOIN studio st ON al.studio_id = st.studio_id
-        WHERE a.artist_id = p_artist_id;
+        INNER JOIN artist_band ab ON a.artist_id = ab.artist_id AND a.artist_id = p_artist_id
+        INNER JOIN band b ON ab.band_id = b.band_id
+        INNER JOIN album al ON b.band_id = al.band_id
+        INNER JOIN song s ON al.album_id = s.album_id
+        INNER JOIN studio st ON al.studio_id = st.studio_id;
 END artist_func;
 $artist_songs$ LANGUAGE plpgsql;
 
